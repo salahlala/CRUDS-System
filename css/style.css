@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --main-color : #2196f3;
+}
+
+
+.container {
+  padding: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+.container .content .create-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  padding:0 30px;
+}
+.container .content .create-box .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+  width: 400px;
+}
+
+.container .content .create-box h3.active {
+  transform: translateY(200px);
+}
+.container .content .create-box h3 {
+  font-size: 60px;
+  transition: .7s ease-in-out;
+  position: absolute;
+  color: var(--main-color)
+}
+
+.container .content .create-box h2 {
+  transform: translateY(-200px);
+  transition: .7s ease-in-out;
+  font-size: 60px;
+  color: #009688;
+}
+.container .content .create-box h2.active {
+  transform: translateY(0px);
+}
+.container .content .create-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.container .content .create-box form .money{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap :10px;
+}
+.container .content .create-box form .money >input {
+  width: 50%;
+}
+.content .create-box .st-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.content .create-box .st-amount input {
+  width: 100%;
+}
+.container .content .create-box form input{
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #eee;
+  font-weight: bold;
+  font-size: 17px;
+}
+.container .create-box .contentBtn {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+.container .content .create-box .toolstatus {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.container .content .create-box .add{
+  position: absolute;
+  background-color : var(--main-color);
+
+}
+.container .content .create-box .toolstatus p {
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: .7s ease-in-out;
+}
+
+.container .content .create-box .update {
+  transform: translateY(-200px);
+  background-color: #009688;
+}
+
+.container .content .create-box .add.active {
+  transform: translateY(200px);
+}
+
+.container .content .create-box .update.active {
+  transform: translateY(0px);
+}
+
+.container .content .create-box .deleteall {
+  background-color: rgb(132, 39, 39);
+  color: white ;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.hid {
+  cursor: no-drop !important;
+}
+.container .content .create-box form input:focus {
+  outline: none;
+}
+.container .content .details-box {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container .content .details-box form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% ;
+  position: relative;
+}
+.container .content .details-box form input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #eee;
+  padding-left:60px ;
+  font-size: 22px;
+  font-weight: bold;
+}
+.container .content .details-box form input:focus {
+  outline: none;
+}
+.container .content .details-box form i {
+  position: absolute;
+  cursor: pointer;
+}
+.container .content .details-box form i.search {
+  left : 15px ;
+  font-size: 22px;
+}
+.container .content .details-box form i.clean {
+  right: 29px;
+  font-size: 26px;
+}
+.container .content .details-box table {
+  width: 100%;
+  margin-top: 30px;
+}
+.container .content .details-box table thead {
+  margin-bottom: 10px;
+}
+.container .content .details-box table tr {
+  width: 100%;
+  transition: .5s;
+}
+.container .content .details-box table tr.active {
+  background-color:#009688;
+  color: #fff !important;
+}
+.container .content .details-box table tr.active i {
+  color: #fff;
+}
+.container .content .details-box table tr td {
+  text-align: center;
+  padding-top: 16px;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.306);
+  padding-bottom: 20px;
+  max-width: 105px;
+}
+.container .content .details-box table tr th{
+  font-size: 24px;
+}
+.container .content .details-box table tr i {
+  cursor: pointer;
+  margin-left: 10px;
+  color :var(--main-color)
+}

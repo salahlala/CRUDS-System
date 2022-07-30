@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>CRUDS System</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="create-box">
+          <div class="title">
+            <h3>Create</h3>
+            <h2>Update</h2>
+          </div>
+          <form action="#" class="userInput">
+            <input type="text" placeholder="Name" class="nameInput" />
+            <div class="money">
+              <input type="number" placeholder="Price" class="priceInput" />
+              <input type="number" placeholder="Discount" class="discInput" />
+            </div>
+
+            <div class="st-amount">
+              <input type="text" placeholder="Category" class="catInput" />
+              <input
+                type="number"
+                placeholder="Amount"
+                min="0"
+                class="amountInput"
+              />
+            </div>
+          </form>
+          <div class="contentBtn">
+            <p class="deleteall"></p>
+            <div class="toolstatus">
+              <p class="add">Create</p>
+              <p class="update">Update</p>
+            </div>
+          </div>
+        </div>
+        <div class="details-box">
+          <form action="#">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <input type="text" placeholder="Serach By Name" id="search" />
+            <i class="fa-solid fa-xmark clean"></i>
+          </form>
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Disc</th>
+                <th>Total</th>
+                <th>Category</th>
+                <!-- <th>Amount</th> -->
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- <tr>
+                <td>s</td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
